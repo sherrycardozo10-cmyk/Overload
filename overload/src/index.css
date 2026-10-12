@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { min-height: 100%; }
+body {
+  background: #FAF8F4;
+  color: #2A2A2A;
+  font-family: Satoshi, ui-sans-serif, system-ui, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: none;
+}
+input, select, button, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid #5E7A5E; outline-offset: 2px; }
+input:focus-visible, select:focus-visible { outline: none; }
+input[type='date'] { min-height: 3rem; }
+::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
